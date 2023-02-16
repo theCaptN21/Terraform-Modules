@@ -45,7 +45,7 @@ resource "aws_route_table_association" "PriRTassociation" {
   subnet_id      = aws_subnet.privatesubnets.id
   route_table_id = aws_route_table.PrivateRT.id
 }
-resource "aws_eip" "nateIP" {
+resource "aws_eip" "katIP" {
   vpc = true
 }
 
